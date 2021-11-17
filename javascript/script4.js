@@ -1,4 +1,4 @@
-var sikl=+prompt("Son kiritib darajasini bilgilab bering Biz javobini chiqarib beramiz")
+var alert("Son kiritib darajasini bilgilab bering Biz javobini chiqarib beramiz")
 var son=+prompt("Son kiriting")
 while(isNaN(son) || son==0){
     son=+prompt("Siz son kiritmadingiz")
