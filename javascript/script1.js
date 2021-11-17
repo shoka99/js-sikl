@@ -1,17 +1,20 @@
-var son = +prompt("Yoshizni kiriting")
-if(son<=18){
-    alert("O'qing odam bo'lasiz")
+var raqam = +prompt("Yoshizni kiriting") 
+ while(isNaN(raqam) || raqam == 0){   
+    raqam = +prompt("siz raqam kiritmadingiz")
 }
-else if(!isNaN(son) && son>18 && son<=50){
-    alert("Soqqani qilish kerak voqt o'tib ketvotti");
+if(!isNaN(raqam) && raqam<=18){
+    alert("O'qish kere bu vaqta")
 }
-else if(!isNaN(son) && son>50 && son<59){
+else if(!isNaN(raqam) && raqam>18 && raqam<=50){
+alert("Soqqani qilish kerak voqt o'tib ketvotti");
+}
+else if(!isNaN(raqam) && raqam>50 && raqam<59){
     alert("Pensiya vaqti yaqinlashib qobdiyu sog'likga etiborli bo'ling");
 }
-else if(!isNaN(son) && son>59 && son<=100){
+else if(!isNaN(raqam) && raqam>59 && raqam<=100){
     alert("Qarilik gashtini suring, sog' bo'ling");
 }
-else if(!isNaN(son) && son>100 && son<130){
+else if(!isNaN(raqam) && raqam>100 && raqam<130){
     alert("Rekord yosh 130 ga oz qobdiyu Otahon")
 }
 else{
